@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import {CP} from "./components/CP.js";
+import FP from "./components/FP.jsx";
+
 
 function App() {
+  const obj1={a:1,b:{c:{d:3}}};
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CP obj={obj1} fiza="fatima" />
+
+      <div> 
+        FUNCTIONAL
+      </div>
+      <FP name="jameel" age={12} />
     </div>
   );
 }
